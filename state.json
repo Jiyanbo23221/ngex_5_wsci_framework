@@ -1,0 +1,14 @@
+{
+  "problem": "\nI changed my university password this morning.\nNow my Windows laptop won't connect to campus Wi-Fi,\nbut my phone still works.\n",
+  "wi_fi status": "operational",
+  "wi-fi_check": true,
+  "solution": {
+    "diagnosis": "The Windows laptop failed to connect to campus Wi-Fi because it is still using cached old credentials. The phone worked because it does not cache Wi-Fi passwords in the same way.",
+    "steps": [
+      "Forget the 'eduroam' network in Windows Wi-Fi settings: Go to Settings > Network & Internet > Wi-Fi > Manage known networks > Select 'eduroam' > Click 'Forget'.",
+      "Reconnect to 'eduroam' using the new password: Click 'Connect' after forgetting the network, then enter the updated university password.",
+      "Verify the university account is active: Check with your institution's IT support or account management system to ensure the password change was successful and the account is not locked."
+    ],
+    "additional_notes": "Windows may prompt for the password again after reconnecting. If issues persist, contact your university's IT helpdesk for further assistance. Phones typically do not cache Wi-Fi credentials, which is why they work without intervention."
+  }
+}
